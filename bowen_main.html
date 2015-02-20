@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<!-- This is file    bowen_main.html -->
+<head>
+   <link rel="stylesheet" type="text/css" href="gui_analysis_examples.css">
+</head>
+
+<body>
+<h1> Ray Bowen (American Dental Association & NIST) </h1>
+<h3> Sensitivity Analysis of Factors Affecting Dental Polysac Adhesion 2<sup>3</sup> (k=3,n=8) </h3>
+
+<div class = "ref">
+<pre class = "ref">
+Reference: xxx
+</pre>
+</div>
+
+<hr> </hr>
+
+<pre>
+ 1. <mark>Question</mark>   : 1. What are the most important factors affecting dental polysac adhesion?
+                    Deliverable: Ranked list of 3 factors (and interactions)
+                 2. What factor settings yield the highest adhesive strength?
+                    Deliverable: Best settings for each of the 3 factors
+                 Problem Category: <span class = "ref">Sensitivity, Optimization</span> 					
+ 2. <mark>Design</mark>     : <a href = "2to3.html">2**3 full factorial (k=3 factors,n=8 observations)</a>
+                    1. Response Y = Adhesive Strength
+                    2. Factor  X1 = Agent       (2 levels:  aa and  bb)
+                    3. Factor  X2 = Cleanser    (2 levels:  cc and  dd)
+                    4. Factor  X3 = Mordant     (2 levels:  ee and ff)
+ 3. <mark>Data</mark>       : <a href = "bowen.dat.txt">bowen.dat </a>
+ 4. <mark>Analysis</mark>   : <a href = "http://www.itl.nist.gov/div898/handbook/pri/section5/pri59.htm">10-Step DEX Analysis</a>
+       Program : <a href = "bowen.dp.txt">bowen.dp</a>
+       Output  : <a href = "bowen.pdf">bowen.pdf </a> 
+ 5. <mark>Conclusions</mark>:
+    1. The data ranges from 90 to 374, with a mean adhesive strength of 184.875.
+    2. There is 1 important factor: X2 (cleanser) with an effect of 154.3 (= 83.43%);
+       this is statistically significant (p < .05).	   
+       The least important (main) factor is X3 (mordant) with an effect of 31.25 (= 16.90%)  
+    3. Interactions: The second most important factor is an X1X2 (agent x cleaner) interaction with 
+	   an effect of 66.75 (= 36.11%); this interaction is of interest, but not statistically significant.
+    4. The best setting (yielding a response of Y = 374) is (X1,X2,X3) = (+ + +),
+       that is,(agent = bb, cleanser = dd, mordant = ff)
+    5. The best direction for potential future adhesive strength improvement would be by 
+       increasing both X2 (cleanser) and X1 (mordant).
+   
+</body>
+</html>

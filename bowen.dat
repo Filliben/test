@@ -1,0 +1,33 @@
+This is dataplot data file     bowen.dat
+Agent/cleanser/mordant effect on dental polysac adhesion
+Ray Bowen dental polysac adhesion study
+2**3 full factorial design
+Number of observations = 8
+Total number of variables per line image = 4
+   Response variable = adhesion
+   Factor 1          = agent    (2 levels: aa and bb)
+   Factor 2          = cleanser (2 levels: aa and bb)
+   Factor 3          = mordant  (2 levels: aa and bb)
+To read this file into dataplot--
+   skip 25
+   read bowen.dat y x1 x2 x3
+
+
+
+
+
+
+
+
+
+
+ y     x1  x2  x3
+------------------
+ 99    -1  -1  -1
+ 90     1  -1  -1
+237    -1   1  -1
+251     1   1  -1
+149    -1  -1   1
+ 93     1  -1   1
+186    -1   1   1
+374     1   1   1

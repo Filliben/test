@@ -1,0 +1,22 @@
+/* This is css file     blue.css      1/20/15   */
+
+/* ----- general ----- */
+
+body {background-color: lightgrey}
+
+h1   {
+     color: blue;
+     line-height: 0px;
+     }
+
+h2   {color: blue}
+
+p    {color: blue}
+
+pre  {
+     color: blue;
+     /* font-weight: bold; */
+     }
+
+button {color: blue}
+ 

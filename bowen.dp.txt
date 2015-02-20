@@ -1,0 +1,32 @@
+. This is dataplot program   bowen.dp     1/13/15
+. Purpose: Analyze Box & Bisgaard chemical reactor yield (k=5,n=32) via 10-step analysis
+. Design = 2**5 full factorial 
+. Date: 1/13/15
+.
+. -----start point-----
+.
+dimension 100 variables
+.
+. -----Step 1: Read in the data and define strings-----
+.
+let k = 5
+skip 25; read   bowen.dat   Y X1 X2 X3
+.
+let string project = Dental Polysac Adhesion
+let string trailer = bowen.dp
+let string sty = Adhesion
+.
+let string stx1 = Agent
+let string stx2 = Cleanser
+let string stx3 = Mordant
+.
+let string stx1l = aa bb
+let string stx2l = cc dd
+let string stx3l = ee ff
+.
+let string colorl = red blue
+.
+. -----Step 2: Generate 10-step DEX analysis-----
+.
+call dex10stepanalysis.dp
+.
